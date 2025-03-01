@@ -19,17 +19,30 @@
 
   <body>
 
+    {% include 'nav.html'%}
+
+    <img class="img-fluid"  id="banner"  src="https://0fedba55-2d91-4369-a0bb-ceb65ead6ed8-00-h0kooy54u88s.sisko.replit.dev/static/banner.jpg" height="320">
+    
     <div class="container">
 
       <h1 class="text-center mt-2 mb-4">Job Seeker</h1>
-      <img class="img-fluid"  id="banner"  src="https://0fedba55-2d91-4369-a0bb-ceb65ead6ed8-00-h0kooy54u88s.sisko.replit.dev/static/banner.jpg" height="320">
-  
-      <h2 class="text-center mt-2 mb-4">About Job Seeker</h2>
+
+      <div class="row" style="margin-bottom:16px">
+
+        <div class="col-6">
   
       <p class="lead"> Looking for a job shouldn’t be a struggle. Our platform connects job seekers with top companies, making the job           search process seamless and efficient. Whether you’re a fresh graduate or an experienced professional, we provide opportunities tailored       to your skills and career goals. Upload your resume, explore job listings, and apply with just a few clicks!
   
         With a user-friendly interface and advanced filters, you can easily search for jobs based on industry, location, and experience level.         Our platform also provides real-time notifications, ensuring you never miss an opportunity that matches your profile. Gain access to           exclusive job postings from reputed companies and startups looking for fresh talent. We offer resources such as resume-building tips           and interview guidance to help you stand out. Start your job search today and take the next step toward a brighter future! 🚀
       </p>
+
+        </div>
+
+        <div class="col-6"> 
+        <img src="/static/people.jpg" style="height:320px ; boarder-radius:4px;">
+        </div>
+        
+      </div>
   
       <h2 class="text-center mt-2 mb-4">Job Openings</h2>
   
@@ -51,7 +64,7 @@
       </div>
 
     </div>
-    
+    {% include 'footer.html'%}
   </body>
   
 </html>
